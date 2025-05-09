@@ -19,11 +19,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding: 20px;
     }
+  
     #countdown {
-      font-size: 64px;
+      font-size: 10vw; /* Scales with screen width */
       text-transform: uppercase;
       letter-spacing: 2px;
+    }
+  
+    @media (min-width: 768px) {
+      #countdown {
+        font-size: 64px; /* Fixed size on larger screens */
+      }
     }
   </style>
 </head>
